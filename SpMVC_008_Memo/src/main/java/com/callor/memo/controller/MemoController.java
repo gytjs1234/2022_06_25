@@ -27,7 +27,7 @@ public class MemoController {
 	private MemoService memoService;
 
 	@RequestMapping(value = "/insert", method = RequestMethod.GET)
-	public String insert(@ModelAttribute("MemoVO") MemoVO memoVO, Model model) {
+	public String insert(@ModelAttribute("MemoVO") MemoVO memoVO, Model model){
 
 		model.addAttribute(memoVO);
 

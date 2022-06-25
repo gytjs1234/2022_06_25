@@ -72,7 +72,7 @@ a.delete {
 				<p>내용 : ${MEMO.m_memo}
 			</div>
 
-			<!-- <img src="${rootPath}/upload/${MEMO.m_image}"> -->
+<%-- 			<img src="${rootPath}/upload/${MEMO.m_image}">  --%>
 		</div>
 		<div class="btn-box">
 			<a href="${rootPath}/" class="list">리스트</a> <a
