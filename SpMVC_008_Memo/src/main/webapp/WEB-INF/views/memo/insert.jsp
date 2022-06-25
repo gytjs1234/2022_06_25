@@ -13,20 +13,57 @@
 body {
 	background-color: pink;
 }
+
+textarea {
+	width: 70%;
+	height: 10em;
+	border: 2px solid black;
+	resize: none;
+	margin: 20px;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+input {
+	padding: 10px;
+	text-align: center;
+}
+
+.f {
+	padding: 10px;
+}
+
+div {
+	margin: 20px auto;
+	text-align: center;
+}
+button{
+font-size: 15px;
+}
+
+
 </style>
 <body>
-	<form:form modelAttribute="MemoVO"  enctype="multipart/form-data">
-		<h1>메모작성하기</h1>
-		<form:input path="m_author" />
-		<form:input path="m_date" />
-		<form:input path="m_time" />
+	<div class="div">
+		<form:form modelAttribute="MemoVO" enctype="multipart/form-data">
+			<h1>메모작성하기</h1>
+			<form:input path="m_author" />
+			<form:input path="m_date" />
+			<form:input path="m_time" />
 
-		<form:textarea path="m_memo" cols="50" rows="10" />
-		<input type="file" name="img">
-		<br>
-		<button>메모저장</button>
-		<br>
-	</form:form>
+			<form:textarea path="m_memo" cols="50" rows="10" />
+			<br>
+			<div>
+				<input class="f" type="file" name="img">
+				<button>메모저장</button>
+			</div>
+		</form:form>
+
+	</div>
 
 </body>
 </html>

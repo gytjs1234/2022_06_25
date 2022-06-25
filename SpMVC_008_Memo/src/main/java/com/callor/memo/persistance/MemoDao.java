@@ -20,12 +20,4 @@ public interface MemoDao {
 
 	public void create_memo_table();
 
-	public List<MemoVO> findByauthor(String m_author);
-
-	public List<MemoVO> findBydate(String m_date);
-
-	public List<MemoVO> findBymemo(String m_memo);
-
-	public List<MemoVO> findByimage(String m_image);
-
 }

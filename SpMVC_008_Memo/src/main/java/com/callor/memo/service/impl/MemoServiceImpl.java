@@ -15,6 +15,8 @@ import com.callor.memo.service.MemoService;
 
 @Service
 public class MemoServiceImpl implements MemoService {
+	
+
 	private final ResourceLoader resLoader;
 
 	   private final String upLoadFolder;
@@ -101,30 +103,6 @@ public class MemoServiceImpl implements MemoService {
 	}
 
 	@Override
-	public List<MemoVO> findByauthor(String m_date) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<MemoVO> findBydate(String m_time) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<MemoVO> findBymemo(String m_memo) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<MemoVO> findByimage(String m_image) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public List<MemoVO> findByMemoSeq(long m_seq) {
 		// TODO Auto-generated method stub
 		return null;
@@ -143,13 +121,6 @@ public class MemoServiceImpl implements MemoService {
 	}
 
 	
-
-	@Override
-	public String fileUp(MultipartFile file, String upLoadFolder) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	@Override
 	public String fileUp() {
 		// TODO Auto-generated method stub

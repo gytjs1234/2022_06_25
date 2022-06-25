@@ -10,4 +10,3 @@
 		<property name="maxUploadSizePerFile" value="20000000" />
 	</bean>
 </beans>
-x

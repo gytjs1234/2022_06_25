@@ -79,9 +79,15 @@ public class MemoController {
 	}
 
 	@RequestMapping(value = "/{m_seq}/update", method = RequestMethod.POST)
-	public String update(MemoVO memoVO) {
+	public String update(@ModelAttribute("memoVO") MemoVO memoVO, @RequestParam("img") MultipartFile file) {
 
-		int ret = memoService.update(memoVO);
+		try {
+			String filename = memoService.fileUp(file);
+			memoVO.setM_image(filename);
+			int ret = memoService.update(memoVO);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		String retStr = String.format("redirect:/memo/%s/detail", memoVO.getM_seq());
 		return retStr;

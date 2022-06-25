@@ -46,24 +46,41 @@ div.btn-box a:hover {
 }
 
 a.list {
-	background-color: green;
+	background-color: black;
 }
 
 a.update {
-	background-color: blue;
+	background-color: black;
 }
 
 a.delete {
-	background-color: red;
+	background-color: black;
+}
+img{
+width: 50%;
+margin: 30px 50px;
+
+}
+
+body{
+background-color: pink;
+}
+.detail{
+background-color: black;
+color: white;
+text-align: center;
+margin: 30px 50px;
+display: inline-block;
+height: 300px;
+font-size: 20px;
+box-shadow: 3px 3px 3px white;
 }
 </style>
 </head>
 <body>
 	<section class="w3-container">
 		<div class="w3-container detail-flex">
-			<div>
-				<img src="${MEMO.m_image}">
-			</div>
+			
 			<div class="detail">
 				<p>SEQ : ${MEMO.m_seq}
 				<p>작성자 : ${MEMO.m_author}
@@ -72,7 +89,7 @@ a.delete {
 				<p>내용 : ${MEMO.m_memo}
 			</div>
 
-<%-- 			<img src="${rootPath}/upload/${MEMO.m_image}">  --%>
+			<img src="${rootPath}/upload/${MEMO.m_image}">
 		</div>
 		<div class="btn-box">
 			<a href="${rootPath}/" class="list">리스트</a> <a
